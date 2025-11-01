@@ -6,8 +6,17 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-plus-jakarta);
+  --font-display: var(--font-plus-jakarta);
+  --color-primary: #B76E79;
+  --color-primary-foreground: #ffffff;
+  --color-background-light: #F8F9FA;
+  --color-background-dark: #0A192F;
+  --color-text-light: #343A40;
+  --color-text-dark: #F8F9FA;
+  --color-neutral-light: #E9ECEF;
+  --color-neutral-dark: #343A40;
+  --color-accent-gold: #FFD700;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -31,8 +40,6 @@
   --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -41,6 +48,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --radius-default: 0.5rem;
+  --radius-full: 9999px;
 }
 
 :root {
@@ -119,4 +128,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
